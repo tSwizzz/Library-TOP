@@ -33,3 +33,37 @@ p {
 }
 /*XXXXX Header Styling XXXXX*/
 
+/*-----Book Card layout styling-----*/
+.bookContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 20px;
+}
+.bookCard {
+    justify-self: center;
+    background-color: lightgray;
+    border-radius: 20px;
+    margin:20px;
+    padding: 30px;
+    width: 260px;
+    height: 260px;
+}
+.readItCheckBox {
+    display: flex;
+    gap:4px;
+
+}
+.readItCheckBox p {
+    background-color: yellow;
+    border: 2px solid black;
+    border-radius: 4px;
+    color: darkgreen;
+    justify-self: center;
+    padding: 5px;
+}
+.yes:hover{
+    background-color: green;
+    transition: 1.2s;
+    transform: scale 1.1;
+}
