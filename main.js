@@ -1,6 +1,6 @@
 let myLibrary = [];
+let readIt
 let numOfBooks = 0;
-let bookNumber = 0;
 const books = document.querySelector(".books");
 const bookButton = document.querySelector(".addBook");
 const author = document.querySelector("#author");
@@ -49,9 +49,9 @@ function displayBook() {
 
         addNewBook.classList.add("book");
         books.appendChild(addNewBook);
-
         numOfBooks++;
     }
+
 }
 
 function readBook() {
@@ -61,6 +61,8 @@ function didNotReadBook() {
     readIt = false;
 }
 function removeBook() {
+
+    }
 }
 function createBook() {
     let newBook = new Book(author.value, title.value, pages.value, readIt);
