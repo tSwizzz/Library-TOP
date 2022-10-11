@@ -21,12 +21,12 @@ p {
     background-color: black;
     font-size: xx-large;
 }
-.newBook {
+.addBook {
     border-radius: 16px;
     color:darkgreen;
     box-shadow: 2px 1px 2px;
 }
-.newBook:hover {
+.addBook:hover {
     transition: 1.3s;
     transform: scale(1.2);
     background-color: yellow;
@@ -34,31 +34,31 @@ p {
 /*XXXXX Header Styling XXXXX*/
 
 /*-----Book Card layout styling-----*/
-.bookContainer {
+.books {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     gap: 20px;
+    background-color: green;
 }
 .bookCard {
     justify-self: center;
     background-color: lightgray;
     border-radius: 20px;
-    margin:20px;
+    margin: 20px;
     padding: 30px;
     width: 260px;
-    height: 260px;
+    height: 310px;
 }
 .readItCheckBox {
     display: flex;
     gap:4px;
-
 }
 .readItCheckBox p {
-    background-color: yellow;
+    background-color: gray;
     border: 2px solid black;
     border-radius: 4px;
-    color: darkgreen;
+    color: lightgreen;
     justify-self: center;
     padding: 5px;
 }
@@ -66,4 +66,12 @@ p {
     background-color: green;
     transition: 1.2s;
     transform: scale 1.1;
+}
+.no:hover {
+    background-color: red;
+    transition: 1.2s;
+    transform: scale 1.1;
+}
+h3 > p {
+    color:red;
 }
