@@ -11,13 +11,15 @@ const yesRead = document.querySelector(".yes");
 const noRead = document.querySelector(".no");
     noRead.addEventListener('click', didNotReadBook);
 
-function Book(author, title, pages, read) {
-    this.author = author;
-    this.title = title;
-    this.pages = pages;
-    this.read = read;
-    this.addBookToLibrary = function() {
-        myLibrary.push(this);
+class Book {
+    constructor(author, title, pages, read) {
+        this.author = author;
+        this.title = title;
+        this.pages = pages;
+        this.read = read;
+        this.addBookToLibrary = function() {
+            myLibrary.push(this);
+        }
     }
 }
 function displayBook() {
@@ -61,9 +63,9 @@ function didNotReadBook() {
     readIt = false;
 }
 function removeBook() {
-
-    }
+    
 }
+
 function createBook() {
     let newBook = new Book(author.value, title.value, pages.value, readIt);
     newBook.addBookToLibrary();
